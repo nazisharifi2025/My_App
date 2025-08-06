@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
-<body class="">
+<body class="h-screen w-full flex justify-center items-center flex-col">
     
 </body>
 </html>
