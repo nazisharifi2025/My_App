@@ -8,6 +8,9 @@
 </head>
 <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
 <body class="h-screen w-full flex justify-center items-center flex-col">
-    
+    <div class="w-[27%] h-fit flex flex-col ">
+        <input type="text" class="w-full py-3 rounded border-2 border-gray-300 bg-gray-100">
+        <input type="text" class="w-full py-3 rounded border-2 border-gray-300 bg-gray-100">
+    </div>
 </body>
 </html>
