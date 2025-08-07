@@ -21,6 +21,10 @@
                 <span class="font-bold text-xl">Name</span>
             <input type="text" class="shadow-md shadow-gray-500 w-full py-3">
             </label>
+            <label for="">
+                <span class="font-bold text-xl">Name</span>
+            <input type="text" class="shadow-md shadow-gray-500 w-full py-3">
+            </label>
         </form>
     </div>
 </body>
