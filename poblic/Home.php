@@ -9,7 +9,7 @@
 <body class="h-screen w-full bg-pink-100 flex justify-center items-center">
     <div class="w-[90%] h-[90%] shadow-md shadow-gray-500 flex justify-between">
         <form action="" class="w-1/2 h-full flex flex-col ">
-            
+            <input type="text" class="shadow-md shadow-gray-500 w-full py-3">
         </form>
     </div>
 </body>
