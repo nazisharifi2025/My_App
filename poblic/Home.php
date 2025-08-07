@@ -25,6 +25,7 @@
                 <span class="font-bold text-xl">Name</span>
             <input type="password" class="shadow-md shadow-gray-500 w-full py-3">
             </label>
+            <button class="py-2 px-3 bg-blue-400 rounded-xl">Sign Up</button>
         </form>
     </div>
 </body>
