@@ -25,9 +25,8 @@
                 <span class="font-bold text-xl">Confirm Password</span>
             <input type="password" class="shadow-md shadow-gray-500 w-full py-3">
             </label>
-            <button class="py-2 px-3 bg-blue-400 rounded-xl">Sign Up</button>
         </form>
-        <div class="py-3 px-4 rounded-2xl rounded-t-none w-[40%] bg-violet-950 shdow-md shadow-gray-500"></div>
+        <button class="py-3 px-4 rounded-2xl rounded-t-none w-[40%] bg-violet-950 shdow-md shadow-gray-500">Sing Up</button>
     </div>
 </body>
 </html>
