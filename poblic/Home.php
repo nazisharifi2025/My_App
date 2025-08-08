@@ -14,15 +14,15 @@
             <input type="text" class="shadow-md shadow-gray-500 w-full py-3">
             </label>
             <label for="">
-                <span class="font-bold text-xl">Name</span>
+                <span class="font-bold text-xl">Email</span>
             <input type="email" class="shadow-md shadow-gray-500 border w-full py-3">
             </label>
             <label for="">
-                <span class="font-bold text-xl">Name</span>
+                <span class="font-bold text-xl">Password</span>
             <input type="password" class="shadow-md shadow-gray-500 w-full py-3">
             </label>
             <label for="">
-                <span class="font-bold text-xl">Name</span>
+                <span class="font-bold text-xl">Confirm Password</span>
             <input type="password" class="shadow-md shadow-gray-500 w-full py-3">
             </label>
             <button class="py-2 px-3 bg-blue-400 rounded-xl">Sign Up</button>
