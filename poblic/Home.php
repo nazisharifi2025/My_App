@@ -11,7 +11,7 @@
         <form action="" class="w-1/2 h-full flex flex-col ">
             <label for="">
                 <span class="font-bold text-xl">Name</span>
-            <input type="text" class="shadow-md shadow-gray-500 w-full py-3">
+            <input type="text" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
             </label>
             <label for="">
                 <span class="font-bold text-xl">Email</span>
