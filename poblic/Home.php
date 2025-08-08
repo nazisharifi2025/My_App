@@ -23,7 +23,7 @@
             </label>
             <label for="">
                 <span class="font-bold text-xl">Confirm Password</span>
-            <input type="password" class="shadow-md shadow-gray-500 w-full py-3">
+            <input type="password" class="shadow-md shadow-gray-500 border rounded-xl  w-full py-3">
             </label>
             <div class="w-full flex justify-between font-bold text-xs">
                 <span>Forgit Password?</span>
