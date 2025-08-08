@@ -25,7 +25,7 @@
                 <span class="font-bold text-xl">Confirm Password</span>
             <input type="password" class="shadow-md shadow-gray-500 w-full py-3">
             </label>
-            <div class="w-full flex justify-between"></div>
+            <div class="w-full flex justify-between font-bold text-xs"></div>
         </form>
         <button class="py-3 px-4 rounded-2xl rounded-t-none w-[40%] bg-violet-950 shdow-md shadow-gray-500">Sing Up</button>
     </div>
