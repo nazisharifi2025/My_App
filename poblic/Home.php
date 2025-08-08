@@ -30,7 +30,7 @@
                 <span>Sign In</span>
             </div>
         </form>
-        <button class="py-3 px-4 rounded-2xl rounded-t-none w-[40%] bg-violet-950 shdow-md shadow-gray-500">Sing Up</button>
+        <button class="py-3 px-4 rounded-2xl rounded-t-none font-bold text-xl w-[40%] bg-violet-950 shdow-md shadow-gray-500">Sing Up</button>
     </div>
 </body>
 </html>
