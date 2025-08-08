@@ -15,7 +15,7 @@
             </label>
             <label for="">
                 <span class="font-bold text-xl">Email</span>
-            <input type="email" class="shadow-md shadow-gray-500 border w-full py-3">
+            <input type="email" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
             </label>
             <label for="">
                 <span class="font-bold text-xl">Password</span>
