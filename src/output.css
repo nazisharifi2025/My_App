@@ -286,6 +286,9 @@
   .bg-pink-100 {
     background-color: var(--color-pink-100);
   }
+  .bg-violet-950 {
+    background-color: var(--color-violet-950);
+  }
   .bg-linear-180 {
     --tw-gradient-position: 180deg;
     @supports (background-image: linear-gradient(in lab, red, red)) {
