@@ -7,6 +7,6 @@
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body class="h-screen w-full bg-gray-100 text-2xl text-black flex justify-center items-center flex-col">
-    
+    <div class="w-1/2 h-[80%] "></div>
 </body>
 </html>
