@@ -11,6 +11,7 @@
         <h1 class="font-bold text-xl text-center">Login Page</h1>
         <input type="text" class="px-2 py-2 border border-gray-600 bg-gray-100 font-bold">
         <input type="text" class="px-2 py-2 border border-gray-600 bg-gray-100 font-bold">
+        <input type="text" class="px-2 py-2 border border-gray-600 bg-gray-100 font-bold">
     </div>
 </body>
 </html>
