@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body class="h-screen w-full bg-gray-100 text-2xl text-black flex justify-center">
+<body class="h-screen w-full bg-gray-100 text-2xl text-black flex justify-center items-center flex-col">
     
 </body>
 </html>
