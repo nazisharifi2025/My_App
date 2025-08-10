@@ -1,3 +1,9 @@
+<?php
+if(isset($_GET['err'])){
+    echo "<h1>You already have an account</h1>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

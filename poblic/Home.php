@@ -6,6 +6,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $email = $_POST["Email"];
     $password1 = $_POST["password1"];
     $password2 = $_POST["password2"];
+    if($password1 === $password2){
+        $dastor = "INSERT INTO form(name,lastName,email,passwrd) VALUES('$name','$lastName','$email','$password1')";
+        $query = "SELECT * FROM form WHERE email = '$email'";
+        if($connect->query($query)->num_rows > 0){
+          header("location: signin.php?err=error");
+        }
+        else{
+        if($connect ->query($dastor) === true){
+            header("location: signin.php");
+        }
+        else{
+            echo "not a found";
+        }
+    }}
+    else{
+        echo "<script>alert('password do not match!')</script>";
+    }
 }
 
 
@@ -20,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body class="h-screen w-full bg-gray-600 flex justify-center items-center">
+<body class="h-screen w-full bg-gray-600 text-white flex justify-center items-center">
     <div class="w-[90%] h-[90%] shadow-md shadow-gray-500  bg-gray-900 ">
         <h1 class="font-bold text-2xl text-center">Sign Up</h1>
     <div class="flex justify-between h-full w-full">
@@ -55,4 +72,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     </div>
 </body>
-</html>
+</html> 
