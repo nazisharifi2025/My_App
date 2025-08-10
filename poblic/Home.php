@@ -1,3 +1,17 @@
+<?php
+include "Connect.php";
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $name = $_POST["Name"];
+    $lastName = $_POST["LastName"];
+    $email = $_POST["Email"];
+    $password1 = $_POST["password1"];
+    $password2 = $_POST["password2"];
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +24,14 @@
     <div class="w-[90%] h-[90%] shadow-md shadow-gray-500  bg-gray-900 ">
         <h1 class="font-bold text-2xl text-center">Sign Up</h1>
     <div class="flex justify-between h-full w-full">
-        <form class="w-1/2 h-full flex flex-col justify-between  rounded-2xl">
+        <form action=<?php echo $_SERVER["PHP_SELF"] ?> method="post" class="w-1/2 h-full flex flex-col justify-between  rounded-2xl">
             <label for="">
                 <span class="font-bold text-xl">Last Name</span>
-            <input type="text" name="LastName" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
+            <input type="text" name="Name" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
             </label>
             <label for="">
                 <span class="font-bold text-xl">Name</span>
-            <input type="text" name="Name" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
+            <input type="text" name="LastName" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
             </label>
             <label for="">
                 <span class="font-bold text-xl">Email</span>
@@ -25,7 +39,7 @@
             </label>
             <label for="">
                 <span class="font-bold text-xl">Password</span>
-            <input type="password" name="Password1" class="shadow-md shadow-gray-500 border rounded-xl  w-full py-3">
+            <input type="password" name="password1" class="shadow-md shadow-gray-500 border rounded-xl  w-full py-3">
             </label>
             <label for="">
                 <span class="font-bold text-xl">Confirm Password</span>
