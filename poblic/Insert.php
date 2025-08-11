@@ -13,6 +13,7 @@
         <input type="text" class="w-full py-3 px-4 border border-gray-500">
         <input type="text"  class="w-full py-3 px-4 border border-gray-500">
         <input type="text"  class="w-full py-3 px-4 border border-gray-500">
+        <button class="font-bold text-xl ">Send</button>
     </div>
 </body>
 </html>
