@@ -35,38 +35,63 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body class="h-screen w-full bg-gradient-to-tl from-pink-300 to-gray-700 via-gray-300 text-white flex py-4">
-    <div class="w-[35%] mx-auto h-[90%] relative shadow-md shadow-gray-500 rounded-xl  bg-gray-300 my-3">
+    <div class="w-[35%] mx-auto h-[90%] relative shadow-md shadow-gray-500 rounded-xl  bg-gray-200 my-3">
         <h1 class="font-bold text-3xl my-4 text-center">Sign Up</h1>
     <!-- <div class="flex justify-between h-full w-full"> -->
-        <form action=<?php echo $_SERVER["PHP_SELF"] ?> method="post" class="w-[90%] mx-auto h-full gap-2.5 flex flex-col  rounded-2xl">
+        <form action=<?php echo $_SERVER["PHP_SELF"] ?> method="post" class="w-[90%] mx-auto h-full gap-1 flex flex-col  rounded-2xl">
             <label for="">
-                <span class="font-bold text-xl">Last Name</span>
+                <span class="font-bold text-xl">Name</span>
                 <div class="flex w-full justify-center">
-         <span class="material-symbols-outlined p-3 bg-gray-400">
+         <span class="material-symbols-outlined p-4 bg-gray-400">
           person
          </span>
-        <input type="text" name="Name" class="px-2 py-2 bg-gray-300 outline-0">
+        <input type="text" name="Name" class="px-2 py-4 bg-gray-300 outline-0 w-[90%]">
         </div>
             <!-- <input type="text"  class="shadow-md shadow-gray-500 border rounded-xl w-full py-3"> -->
             </label>
             <label for="">
-                <span class="font-bold text-xl">Name</span>
-            <input type="text" name="LastName" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
+                <span class="font-bold text-xl">Last Name</span>
+                       <div class="flex w-full justify-center">
+         <span class="material-symbols-outlined p-4 bg-gray-400">
+          person_4
+         </span>
+        <input type="text" name="LastName" class="px-2 py-4 bg-gray-300 outline-0 w-[90%]">
+        </div>
+            <!-- <input type="text"  class="shadow-md shadow-gray-500 border rounded-xl w-full py-3"> -->
             </label>
             <label for="">
                 <span class="font-bold text-xl">Email</span>
-            <input type="email" name="Email" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
+                              <div class="flex w-full justify-center">
+         <span class="material-symbols-outlined p-4 bg-gray-400">
+          mark_email_unread
+         </span>
+        <input type="text" name="Email" class="px-2 py-4 bg-gray-300 outline-0 w-[90%]">
+        </div>
+            <!-- <input type="email"  class="shadow-md shadow-gray-500 border rounded-xl w-full py-3"> -->
             </label>
             <label for="">
                 <span class="font-bold text-xl">Password</span>
-            <input type="password" name="password1" class="shadow-md shadow-gray-500 border rounded-xl  w-full py-3">
+                                    <div class="flex w-full justify-center">
+         <span class="material-symbols-outlined p-4 bg-gray-400">
+          lock
+         </span>
+        <input type="text" name="password1" class="px-2 py-4 bg-gray-300 outline-0 w-[90%]">
+        </div>
+            <!-- <input type="password"  class="shadow-md shadow-gray-500 border rounded-xl  w-full py-3"> -->
             </label>
             <label for="">
                 <span class="font-bold text-xl">Confirm Password</span>
-            <input type="password" name="password2" class="shadow-md shadow-gray-500 border  rounded-xl  w-full py-3">
+                                         <div class="flex w-full justify-center">
+         <span class="material-symbols-outlined p-4 bg-gray-400">
+          passkey
+         </span>
+        <input type="text" name="password2" class="px-2 py-4 bg-gray-300 outline-0 w-[90%]">
+        </div>
+            <!-- <input type="password"  class="shadow-md shadow-gray-500 border  rounded-xl  w-full py-3"> -->
             </label>
             <div class="w-full flex justify-between font-bold text-[16px]">
                 <span class="hover:underline hover:cursor-pointer">Forgit Password?</span>
