@@ -21,7 +21,7 @@ if(isset($_GET['err'])){
         <div class="flex flex-col w-full gap-4">
         <div class="flex w-full justify-center">
          <span class="material-symbols-outlined p-3 bg-gray-400">
-          person
+          mark_email_unread
          </span>
         <input type="text" class="px-2 py-2 bg-gray-300 outline-0">
         </div>
