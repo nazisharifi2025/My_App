@@ -38,13 +38,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body class="h-screen w-full bg-gradient-to-tl from-pink-300 to-gray-700 via-gray-300 text-white flex py-4">
-    <div class="w-[35%] mx-auto h-[90%] relative shadow-2xl shadow-gray-500 rounded-xl  bg-gray-300 my-3">
+    <div class="w-[35%] mx-auto h-[90%] relative shadow-md shadow-gray-500 rounded-xl  bg-gray-300 my-3">
         <h1 class="font-bold text-3xl my-4 text-center">Sign Up</h1>
     <!-- <div class="flex justify-between h-full w-full"> -->
         <form action=<?php echo $_SERVER["PHP_SELF"] ?> method="post" class="w-[90%] mx-auto h-full gap-2.5 flex flex-col  rounded-2xl">
             <label for="">
                 <span class="font-bold text-xl">Last Name</span>
-            <input type="text" name="Name" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
+                <div class="flex w-full justify-center">
+         <span class="material-symbols-outlined p-3 bg-gray-400">
+          person
+         </span>
+        <input type="text" name="Name" class="px-2 py-2 bg-gray-300 outline-0">
+        </div>
+            <!-- <input type="text"  class="shadow-md shadow-gray-500 border rounded-xl w-full py-3"> -->
             </label>
             <label for="">
                 <span class="font-bold text-xl">Name</span>
@@ -66,7 +72,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="hover:underline hover:cursor-pointer">Forgit Password?</span>
                 <span class="hover:underline hover:cursor-pointer">Sign In</span>
             </div>
-        <button class="py-3 px-8 mx-auto rounded-2xl rounded-t-none font-bold text-xl absolute -bottom-[53px] left-35 hover:shadow-xs  w-[40%] bg-gray-300 shadow-md shadow-gray-600">Sing Up</button>
+        <button class="py-3 px-8 mx-auto rounded-2xl rounded-t-none font-bold text-xl absolute -bottom-[53px] left-35 hover:shadow-xs  w-[40%] bg-gray-300 shadow-md shadow-gray-600 ">Sing Up</button>
         </form>
         <!-- <img src="./img/download (1).jpg" alt=""> -->
     </div>
