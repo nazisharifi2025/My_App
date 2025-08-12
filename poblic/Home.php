@@ -37,11 +37,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body class="h-screen w-full bg-gray-600 text-white flex justify-center items-center">
-    <div class="w-[90%] h-[90%] shadow-md shadow-gray-500  bg-gray-900 ">
-        <h1 class="font-bold text-2xl text-center">Sign Up</h1>
-    <div class="flex justify-between h-full w-full">
-        <form action=<?php echo $_SERVER["PHP_SELF"] ?> method="post" class="w-1/2 h-full flex flex-col justify-between  rounded-2xl">
+<body class="h-screen w-full bg-linear-180 text-white flex justify-center items-center">
+    <div class="w-[35%] mx-auto h-[85%] relative shadow-md shadow-gray-500  bg-gray-900 ">
+        <h1 class="font-bold text-3xl my-4 text-center">Sign Up</h1>
+    <!-- <div class="flex justify-between h-full w-full"> -->
+        <form action=<?php echo $_SERVER["PHP_SELF"] ?> method="post" class="w-[90%] mx-auto h-full gap-2.5 flex flex-col  rounded-2xl">
             <label for="">
                 <span class="font-bold text-xl">Last Name</span>
             <input type="text" name="Name" class="shadow-md shadow-gray-500 border rounded-xl w-full py-3">
@@ -62,13 +62,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="font-bold text-xl">Confirm Password</span>
             <input type="password" name="password2" class="shadow-md shadow-gray-500  rounded-xl  w-full py-3">
             </label>
-            <div class="w-full flex justify-between font-bold text-xs">
-                <span>Forgit Password?</span>
-                <span>Sign In</span>
+            <div class="w-full flex justify-between font-bold text-[16px]">
+                <span class="hover:underline hover:cursor-pointer">Forgit Password?</span>
+                <span class="hover:underline hover:cursor-pointer">Sign In</span>
             </div>
-        <button class="py-3 px-4 mx-auto rounded-2xl rounded-t-none font-bold text-xl w-[40%] bg-violet-950 shdow-md shadow-gray-500">Sing Up</button>
+        <button class="py-3 px-4 mx-auto rounded-2xl rounded-t-none font-bold text-xl absolute -bottom-13 left-35 hover:shadow-xs  w-[40%] bg-gray-900 shadow-md shadow-white">Sing Up</button>
         </form>
-        <img src="./img/download (1).jpg" alt="">
+        <!-- <img src="./img/download (1).jpg" alt=""> -->
     </div>
     </div>
 </body>
