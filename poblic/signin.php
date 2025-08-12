@@ -39,7 +39,7 @@ lock
 </div>
 <span class="hover:underline hover:cursor-pointer text-xl">Forgit Password?</span>
 </div>
-<button class="py-3 px-8 mx-auto rounded-2xl rounded-t-none font-bold text-xl absolute -bottom-[53px] left-21 -z-20 hover:shadow-xs  w-[65%] bg-gray-300 shadow-md shadow-gray-600">Sing Up</button>
+<button class="py-3 px-8 mx-auto rounded-2xl rounded-t-none font-bold text-xl absolute -bottom-[53px] left-21 -z-20 hover:shadow-xs  w-[65%] bg-gray-300 shadow-md shadow-gray-600">Sing in</button>
     </div>
     
 </body>

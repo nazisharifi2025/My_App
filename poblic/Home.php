@@ -42,7 +42,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="w-[35%] mx-auto h-[90%] relative shadow-md shadow-gray-500 rounded-xl text-gray-600  bg-gray-200 my-3">
         <h1 class="font-bold text-3xl my-4 text-center">Sign Up</h1>
     <!-- <div class="flex justify-between h-full w-full"> -->
-        <form action=<?php echo $_SERVER["PHP_SELF"] ?> method="post" class="w-[90%] mx-auto h-full gap-1 flex flex-col  rounded-2xl">
+        <form action=<?php echo $_SERVER["PHP_SELF"] ?> method="post" class="w-[90%] z-50 mx-auto h-full gap-1 flex flex-col  rounded-2xl">
             <label for="">
                 <span class="font-bold text-xl">Name</span>
                 <div class="flex w-full justify-center">
