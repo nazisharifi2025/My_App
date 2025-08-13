@@ -95,7 +95,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </label>
             <div class="w-full flex justify-between font-bold text-[16px]">
                 <span class="hover:underline hover:cursor-pointer">Forgit Password?</span>
-                <span class="hover:underline hover:cursor-pointer">Sign In</span>
+                <span class="hover:underline hover:cursor-pointer"><a href="signin.php">Sign In</a></span>
             </div>
         <button class="py-3 px-8 mx-auto rounded-2xl rounded-t-none font-bold text-xl absolute -bottom-[53px] left-35 hover:shadow-xs  w-[40%] bg-gray-300 shadow-md shadow-gray-600 ">Sing Up</button>
         </form>
