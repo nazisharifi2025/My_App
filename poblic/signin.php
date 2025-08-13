@@ -10,9 +10,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     if( $connect->query($dastor)->num_rows > 0){
         session_start();
          $result =  $connect->query($dastor);
-         $user = $result->fetch_assoc();
-         $_SESSION['user'] = $user;
-         header("location: Insert.php");
+        //  $_SESSION['user'] = $user;
+        while($row = $result->fetch_assoc()){
+            $_SESSION['user_id'] = $row['id'];
+        }
+         header("location:Home.php");
     }
     else{
         echo "<h1>Invalid email or password</h1>";
@@ -50,7 +52,7 @@ lock
 <button class="py-3 px-8 mx-auto rounded-2xl rounded-t-none font-bold text-xl absolute -bottom-[53px] left-21 hover:shadow-xs  w-[65%] bg-gray-300 shadow-md shadow-gray-600">Sing in</button>
 </form>
 <div class="flex justify-center flex-col items-center w-full px-6">
-<h1 class="text-xl">Don't have an account <span class="hover:underline hover:cursor-pointer text-xl text-blue-400"><a href="Home.php">Create One</a></span></h1>
+<h1 class="text-xl">Don't have an account <span class="hover:underline hover:cursor-pointer text-xl text-blue-400"><a href="SignUp.php">Create One</a></span></h1>
 </div>
 
     </div>
