@@ -22,7 +22,9 @@ else{
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
-    <nav class="h-20 w-full rounded-2xl rounded-t-none shadow-sm flex justify-between items-center px-4"></nav>
+    <nav class="h-20 w-full rounded-2xl rounded-t-none shadow-sm flex justify-between items-center px-4">
+        <h1>Hi,</h1>
+    </nav>
 </body>
 </html>
 <?php } ?>
