@@ -1,7 +1,7 @@
 <?php
 include "Connect.php";
 session_start();
-if(isset($_SESSION['user_id'])){
+if(!isset($_SESSION['user_id'])){
     header("Location:signin.php");
     exit(); 
 }
@@ -22,7 +22,7 @@ else{
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
-    <h1>in the name of allah</h1>
+    <nav class="h-20 w-full"></nav>
 </body>
 </html>
 <?php } ?>
