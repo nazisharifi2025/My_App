@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
          $result =  $connect->query($dastor);
         //  $_SESSION['user'] = $user;
         while($row = $result->fetch_assoc()){
-            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['user_id'] = $row['ID'];
         }
          header("location:Home.php");
     }
