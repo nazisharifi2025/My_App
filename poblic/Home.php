@@ -23,7 +23,7 @@ else{
 </head>
 <body>
     <nav class="h-20 w-full rounded-2xl rounded-t-none shadow-sm flex justify-between items-center px-4">
-        <h1>Hi,</h1>
+        <h1 class="text-2xl">Hi,</h1>
         <button class="p-3 bg-gray-200 rounded-ee-xl shadow-inherit">Upload a post</button>
     </nav>
 </body>
