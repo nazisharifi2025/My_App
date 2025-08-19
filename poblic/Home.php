@@ -45,11 +45,52 @@ $result = $connect->query($gettinguser);
       else{ while($row =$gittingPost->fetch_assoc()){
     ?>
     <div class=" w-full flex my-7 p-5 flex-wrap justify-center">
-        <div class="w-[40%] shadow-md shadow-gray-400 h-fit p-2 flex flex-col"> 
+        <div class="w-[40%] shadow-md shadow-gray-400 h-fit p-6 flex flex-col"> 
+        <?php   
+            $userId = $row["user_id"];
+            $dastor = "SELECT  name , lastName FROM form where id =".$userId;
+            $natija =$connect->query($dastor);
+            while($rows =$natija->fetch_assoc()){
+            ?>
+            <h1 class="font-bold text-left mx-5 mt-2">
+                <?php
+                echo $rows["name"]. " ". $rows["lastName"];
+                ?>
+            </h1>
+            <?php
+            }
+            ?>
+            <!-- Created_at start -->
+            <p class="text-gray-400 text-left my-1 mx-5 text-2xl">
+            <?php
+            $postdate =new DateTime( $row["created_at"]);
+            //  $date2 = DateTime::createFromFormat('m/d/y',$date);
+            $now = new DateTime();
+            $diff = $postdate->diff($now); 
+            if($diff->y >0){
+                echo $diff->y . 'year' . ($diff->y  > 1 ? 's' : '') . 'ago';
+            }else if($diff->m >0){
+                echo $diff->m . 'mon' . ($diff->m >1 ? 's' : '') . 'ago';
+            }else if($diff->d >0){
+                echo $diff->d . 'day' . ($diff->d >1 ? 's' : '') . 'ago';
+            }else if($diff->h >0){
+                echo $diff->h . 'hour' . ($diff->h >1 ? 's' : '') . 'ago';
+            }else if($diff->i >0){
+                echo $diff->i . 'minute' . ($diff->i >1 ? 's' : '') . 'ago';
+            }else{
+                echo 'just now';
+            }
+            ?>
+            </p>
+            <!-- created_at ended -->
+             <!-- img start -->
             <img src=<?php echo "img/".  $row["imgUrl"]; ?> class="h-[80%] w-[90%] shadow-inner mx-auto" alt="">
-            <button class="w-[100%] px-6 text-right mx-auto"><span class="material-symbols-outlined">
+            <!-- img ended -->
+             <!-- comment stert -->
+            <a href="" class="w-[100%] px-6 text-right mx-auto"><span class="material-symbols-outlined">
 comment
-</span></button>
+            </span></a> 
+            <!-- comment-ended -->
             <p class="text-center font-bold"><?php echo $row["Post_text"]; ?></p>
         </div>
     </div>
