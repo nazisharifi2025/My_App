@@ -21,6 +21,7 @@ $result = $connect->query($gettinguser);
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
+    <!-- nave start -->
     <nav class="h-20 w-full rounded-2xl rounded-t-none shadow-lg flex justify-between items-center px-8">
         <h1 class="text-2xl">Hi,
             <?php 
@@ -35,6 +36,7 @@ $result = $connect->query($gettinguser);
         </a>
     </button>
     </nav>
+    <!-- nave ended -->
     <?php
       if($gittingPost->num_rows === 0 ){
         ?>
@@ -44,8 +46,10 @@ $result = $connect->query($gettinguser);
       }
       else{ while($row =$gittingPost->fetch_assoc()){
     ?>
+    <!-- Post start -->
     <div class=" w-full flex my-7 p-5 flex-wrap justify-center">
         <div class="w-[40%] shadow-md shadow-gray-400 h-fit p-6 flex flex-col"> 
+            <!-- Name and lastname start -->
         <?php   
             $userId = $row["user_id"];
             $dastor = "SELECT  name , lastName FROM form where id =".$userId;
@@ -60,6 +64,7 @@ $result = $connect->query($gettinguser);
             <?php
             }
             ?>
+            <!-- name and lastname ended -->
             <!-- Created_at start -->
             <p class="text-gray-400 text-left my-1 mx-5 text-2xl">
             <?php
@@ -87,7 +92,7 @@ $result = $connect->query($gettinguser);
             <img src=<?php echo "img/".  $row["imgUrl"]; ?> class="h-[80%] w-[90%] shadow-inner mx-auto" alt="">
             <!-- img ended -->
              <!-- comment stert -->
-            <a href="" class="w-[100%] px-6 text-right mx-auto"><span class="material-symbols-outlined">
+            <a href="Commint.php" class="w-[100%] px-6 text-right mx-auto"><span class="material-symbols-outlined">
 comment
             </span></a> 
             <!-- comment-ended -->
@@ -97,5 +102,6 @@ comment
     <?php
       }}
     ?>
+    <!-- post endded -->
 </body>
 </html>
